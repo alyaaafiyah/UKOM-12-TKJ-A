@@ -149,6 +149,14 @@ Uji koneksi dari Ubuntu Server menuju gateway MikroTik pada interface Ether3 den
 ping 100.100.X.1
 ```
 
+### 3. Menguji Koneksi ke MikroTik
+
+Uji koneksi dari Ubuntu Server menuju gateway MikroTik pada interface Ether3 dengan perintah:
+
+```bash
+ping google.com
+```
+
 Ganti **X** dengan nomor absen yang digunakan. Jika muncul balasan seperti `64 bytes from ...`, berarti Ubuntu Server berhasil berkomunikasi dengan interface **Ether3 MikroTik**.
 
 ## D. Kesimpulan
