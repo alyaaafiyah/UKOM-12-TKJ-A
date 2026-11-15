@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to UKOM-2 | Alya Afiyah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #160629, #401477, #8b5cf6);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 45px 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(35px, 7vw, 65px);
+            font-weight: 900;
+            color: #e9d5ff;
+            text-shadow: 0 0 25px #c084fc;
+        }
+
+        .hero h2 {
+            margin-top: 15px;
+            font-size: 28px;
+        }
+
+        .hero p {
+            color: #e9d5ff;
+            letter-spacing: 4px;
+            margin-top: 8px;
+        }
+
+        .character {
+            width: 230px;
+            margin: 30px auto;
+            display: block;
+            filter: drop-shadow(0 0 25px #d8b4fe);
+        }
+
+        .description {
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 30px;
+            line-height: 1.9;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            margin-bottom: 35px;
+        }
+
+        .description h2 {
+            color: #e9d5ff;
+            margin-bottom: 15px;
+        }
+
+        .ip-section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #e9d5ff;
+        }
+
+        .ip-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .ip-card {
+            background: rgba(255,255,255,0.12);
+            padding: 25px;
+            border-radius: 18px;
+            border: 1px solid #d8b4fe55;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .ip-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .ip-card h3 {
+            color: #d8b4fe;
+            margin-bottom: 15px;
+        }
+
+        .ip-card p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .mission {
+            margin-top: 35px;
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #7c3aed, #4c1d95);
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .mission h2 {
+            margin-bottom: 15px;
+            color: #f5d0fe;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            color: #ddd6fe;
+            font-size: 14px;
+        }
+
+        @media(max-width:600px) {
+            .hero {
+                padding: 40px 10px;
+            }
+            .description {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <section class="hero">
+        <h1>WELCOME TO ! UKOM-2</h1>
+
+        <img
+            class="character"
+            src="buzz-lightyear.png"
+            alt="Astronaut"
+        >
+
+        <h2>Alya Afiyah</h2>
+        <p>XII TKJ A</p>
+    </section>
+
+    <section class="description">
+        <h2>✦ Welcome to My Network Project ✦</h2>
+
+        <p>
+            Selamat datang di halaman UKOM-2!
+            Sebuah perjalanan untuk menunjukkan kemampuan,
+            kreativitas, dan keterampilan dalam bidang
+            Teknik Komputer dan Jaringan.
+        </p>
+
+        <br>
+
+        <p>
+            Melalui kegiatan ini, saya akan menerapkan berbagai
+            pengetahuan mengenai konfigurasi jaringan,
+            pengelolaan server, serta implementasi layanan
+            jaringan komputer. Setiap proses menjadi kesempatan
+            untuk belajar, memahami teknologi, dan mengembangkan
+            kemampuan dalam menyelesaikan berbagai permasalahan
+            jaringan.
+        </p>
+
+        <br>
+
+        <p>
+            Dengan semangat, ketelitian, dan pantang menyerah,
+            saya siap menghadapi setiap tantangan dalam UKOM-2.
+            Karena keberhasilan bukan hanya tentang hasil akhir,
+            tetapi juga tentang proses, pengalaman, dan usaha
+            yang dilakukan untuk mencapainya.
+        </p>
+    </section>
+
+    <section class="ip-section">
+        <h2>✦ NETWORK CONFIGURATION ✦</h2>
+
+        <div class="ip-container">
+
+            <div class="ip-card">
+                <h3>CLIENT NETWORK</h3>
+                <p>10.10.2.1/28</p>
+                <br>
+                <small>
+                    Digunakan sebagai alamat jaringan pada sisi
+                    client untuk mendukung konektivitas perangkat
+                    pengguna.
+                </small>
+            </div>
+
+            <div class="ip-card">
+                <h3>SERVER NETWORK</h3>
+                <p>100.100.2.1/30</p>
+                <br>
+                <small>
+                    Digunakan sebagai alamat jaringan pada sisi
+                    server untuk mendukung komunikasi dan
+                    pertukaran data antarperangkat.
+                </small>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>🚀 MY MISSION</h2>
+
+        <p>
+            Membangun koneksi yang stabil, mengelola server
+            dengan optimal, serta memastikan setiap konfigurasi
+            berjalan sesuai dengan fungsinya.
+        </p>
+
+        <br>
+
+        <h3>
+            "Dream Big, Configure Smart, and Never Stop Learning!"
+        </h3>
+
+        <p>
+            Setiap error memiliki solusi, setiap tantangan
+            memberikan pengalaman, dan setiap langkah membawa
+            kita lebih dekat menuju keberhasilan.
+        </p>
+
+        <br>
+
+        <h2>TO INFINITY AND BEYOND! ✨</h2>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 | ALYA AFIYAH | XII TKJ A
+    <br>
+    UKOM-2 • NETWORK & SERVER CONFIGURATION
+</footer>
+
+</body>
+</html>
